@@ -104,7 +104,7 @@ public class Protocol {
     private static void divCalculate(int code, byte[] data) throws IOException, ClassNotFoundException {
         switch (code){
             case CODE_RES_CALCUALTE:
-                Calculation.resCalculate(data);
+//                Calculation.resCalculate(data);
                 break;
             case 2 :
 

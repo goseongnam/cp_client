@@ -47,7 +47,11 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        if (CheckInitTimer.initTimer) {
+            TimerAlert timer = new TimerAlert();
+            timer.start();
+            CheckInitTimer.initTimer=false; //최초 실행시에만 이 타이머를 돌리기에 false로 값을 변경
+        }
     }
 
     public void AlertListPageMove(ActionEvent actionEvent) throws IOException {
