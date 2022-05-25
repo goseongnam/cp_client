@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_practice.BookmarkController">
+    <children>
+        <Button fx:id="moveMain" layoutX="14.0" layoutY="17.0" onAction="#moveMain" prefHeight="33.0" prefWidth="125.0" text="메인 이동" />
+        <Button fx:id="btnBookmarkAdd" layoutX="561.0" layoutY="79.0" mnemonicParsing="false" onAction="#btnBookmark" prefHeight="40.0" prefWidth="148.0" text="즐겨찾기 추가" />
+        <ListView fx:id="lstNationalChange" layoutX="13.0" layoutY="62.0" prefHeight="135.0" prefWidth="495.0" />
+        <Button fx:id="btnBookmarkDelete" layoutX="561.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnBookmarkDelete" prefHeight="40.0" prefWidth="148.0" text="즐겨찾기 삭제 " />
+        <Button fx:id="btnBookmark1" layoutX="13.0" layoutY="221.0" mnemonicParsing="false" onAction="#moveBookmark" prefHeight="70.0" prefWidth="125.0" text="즐겨찾기1" />
+        <Button fx:id="btnBookmark2" layoutX="156.0" layoutY="221.0" mnemonicParsing="false" onAction="#moveBookmark" prefHeight="70.0" prefWidth="125.0" text="즐겨찾기2" />
+        <Button fx:id="btnBookmark3" layoutX="300.0" layoutY="221.0" mnemonicParsing="false" onAction="#moveBookmark" prefHeight="70.0" prefWidth="125.0" text="즐겨찾기3" />
+        <Button fx:id="btnBookmark4" layoutX="444.0" layoutY="221.0" mnemonicParsing="false" onAction="#moveBookmark" prefHeight="70.0" prefWidth="125.0" text="즐겨찾기4" />
+        <Button fx:id="btnBookmark5" layoutX="586.0" layoutY="221.0" mnemonicParsing="false" onAction="#moveBookmark" prefHeight="70.0" prefWidth="125.0" text="즐겨찾기5" />
+    </children>
+</Pane>

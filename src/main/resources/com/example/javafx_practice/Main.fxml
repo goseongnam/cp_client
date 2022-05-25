@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_practice.MainController">
+    <children>
+        <Button fx:id="btnAlertCheck" layoutX="195.0" layoutY="317.0" mnemonicParsing="false" onAction="#AlertListPageMove" prefHeight="48.0" prefWidth="102.0" text="알람 내역" />
+        <Button fx:id="btnEXchange" layoutX="348.0" layoutY="238.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="211.0" text="미구현 기능(외환 분석)" />
+      <Button layoutX="72.0" layoutY="238.0" mnemonicParsing="false" onAction="#CalculatorPageMove" prefHeight="48.0" prefWidth="225.0" text="환율 계산기" />
+      <Button layoutX="349.0" layoutY="317.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="211.0" text="미구현 기능" />
+      <Button layoutX="72.0" layoutY="159.0" mnemonicParsing="false" onAction="#BookmarkPageMove" prefHeight="48.0" prefWidth="225.0" text="즐겨찾기 화면 이동" />
+      <Button layoutX="348.0" layoutY="159.0" mnemonicParsing="false" onAction="#ChoiceForexMove" prefHeight="48.0" prefWidth="211.0" text="외환 조회" />
+      <TextField alignment="CENTER" layoutX="61.0" layoutY="30.0" prefHeight="76.0" prefWidth="512.0" style="-fx-background-color: skyblue;" text="외환 프로그램">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </TextField>
+      <Button onAction="#AlertAddPageMove" layoutX="72.0" layoutY="317.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="102.0" text="알람 추가" />
+    </children>
+</Pane>

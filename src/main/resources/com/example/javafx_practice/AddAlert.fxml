@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_practice.AddAlertController">
+    <children>
+        <Button fx:id="moveMain" layoutX="14.0" layoutY="17.0" onAction="#moveMain" prefHeight="22.0" prefWidth="99.0" text="메인 이동" />
+        <TextField fx:id="txtAlertInput" layoutX="501.0" layoutY="89.0" prefHeight="40.0" prefWidth="155.0" promptText="알림설정금액 입력..." />
+        <ListView fx:id="lstNationalChange" layoutX="62.0" layoutY="47.0" prefHeight="416.0" prefWidth="417.0" />
+        <Button fx:id="btnAlertCheck" layoutX="501.0" layoutY="215.0" mnemonicParsing="false" onAction="#AlertListPageMove" prefHeight="40.0" prefWidth="142.0" text="Alert 내역 확인" />
+        <Button fx:id="btnAlert" layoutX="501.0" layoutY="152.0" mnemonicParsing="false" onAction="#alertClick" prefHeight="40.0" prefWidth="142.0" text="Alert 추가" />
+    </children>
+</Pane>

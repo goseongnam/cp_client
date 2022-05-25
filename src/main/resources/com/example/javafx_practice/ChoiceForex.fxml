@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_practice.ChoiceForexController">
+    <children>
+        <Button fx:id="moveMain" layoutX="14.0" layoutY="17.0" onAction="#moveMain" prefHeight="22.0" prefWidth="99.0" text="메인 이동" />
+        <ListView fx:id="lstNationalChange" layoutX="13.0" layoutY="62.0" prefHeight="207.0" prefWidth="495.0" />
+        <Button fx:id="btnChange" layoutX="549.0" layoutY="62.0" mnemonicParsing="false" onAction="#moveForexPage" prefHeight="31.0" prefWidth="149.0" text="이동" />
+    </children>
+</Pane>
