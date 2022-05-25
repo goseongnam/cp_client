@@ -192,7 +192,7 @@ public class Bookmark {
             return;
         }
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Forex.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), WindowSize.MAIN_X, 500);
+        Scene scene = new Scene(fxmlLoader.load(), WindowSize.FOREX_X, WindowSize.FOREX_Y);
         StageStore.stage.setTitle(name);
         StageStore.stage.setScene(scene);
         StageStore.stage.show();

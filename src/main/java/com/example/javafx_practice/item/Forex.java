@@ -146,10 +146,10 @@ public class Forex {
 
         try{
             ResSearchDTO resSearchDTO = (ResSearchDTO)Protocol.convertBytesToObject(data);
-            String tmp = "bkpr : " +(resSearchDTO.getBkpr()).replace(",","")+"\n";
-            tmp+="deal : " +(resSearchDTO.getDeal()).replace(",","")+"\n";
-            tmp+="ttb : " +(resSearchDTO.getTtb()).replace(",","")+"\n";
-            tmp+="tts : " +(resSearchDTO.getTts()).replace(",","");
+            String tmp = "bkpr (장부가격): " +(resSearchDTO.getBkpr()).replace(",","")+"\n";
+            tmp+="deal (매매기준율) : " +(resSearchDTO.getDeal()).replace(",","")+"\n";
+            tmp+="ttb (전신환 매입율 기준): " +(resSearchDTO.getTtb()).replace(",","")+"\n";
+            tmp+="tts (전신환 매도율 기준): " +(resSearchDTO.getTts()).replace(",","");
 
             txtDateOutput.setText(tmp);
         } catch (Exception e){
