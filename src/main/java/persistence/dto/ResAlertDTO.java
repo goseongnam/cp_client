@@ -1,39 +1,22 @@
 package persistence.dto;
 
-import java.io.Serializable;
+import com.example.javafx_practice.item.ResAlertObject;
 
-public class ResAlertDTO implements Serializable {
-    private String currencytmp;
-    private String alertAmount;
-    private boolean judgement;
+import java.util.ArrayList;
 
-    public ResAlertDTO(String currencytmp, String alertAmount, boolean judgement) {
-        this.currencytmp = currencytmp;
-        this.alertAmount = alertAmount;
-        this.judgement = judgement;
+public class ResAlertDTO {
+    private static final long serialVersionUID = 2L;
+    ArrayList<ResAlertObject> resList;
+
+    public ResAlertDTO(ArrayList<ResAlertObject> resList) {
+        this.resList = resList;
     }
 
-    public String getCurrencytmp() {
-        return currencytmp;
+    public ArrayList<ResAlertObject> getResList() {
+        return resList;
     }
 
-    public void setCurrencytmp(String currencytmp) {
-        this.currencytmp = currencytmp;
-    }
-
-    public String getAlertAmount() {
-        return alertAmount;
-    }
-
-    public void setAlertAmount(String alertAmount) {
-        this.alertAmount = alertAmount;
-    }
-
-    public boolean isJudgement() {
-        return judgement;
-    }
-
-    public void setJudgement(boolean judgement) {
-        this.judgement = judgement;
+    public void setResList(ArrayList<ResAlertObject> resList) {
+        this.resList = resList;
     }
 }

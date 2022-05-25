@@ -1,39 +1,24 @@
 package persistence.dto;
 
+import com.example.javafx_practice.item.ReqAlertObject;
+
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class ReqAlertDTO implements Serializable {
-    private String currencytmp;
-    private String alertAmount;
-    private int alertNum;
+    private static final long serialVersionUID = 2L;
+    ArrayList<ReqAlertObject> reqList;
 
-    public ReqAlertDTO(String currencytmp, String alertAmount, int alertNum) {
-        this.currencytmp = currencytmp;
-        this.alertAmount = alertAmount;
-        this.alertNum = alertNum;
-    }
-    public String getCurrencytmp() {
-        return currencytmp;
+    public ReqAlertDTO(ArrayList<ReqAlertObject> reqList) {
+        this.reqList = reqList;
     }
 
-    public void setCurrencytmp(String currencytmp) {
-        this.currencytmp = currencytmp;
+    public ArrayList<ReqAlertObject> getReqList() {
+        return reqList;
     }
 
-    public String getAlertAmount() {
-        return alertAmount;
+    public void setReqList(ArrayList<ReqAlertObject> reqList) {
+        this.reqList = reqList;
     }
-
-    public void setAlertAmount(String alertAmount) {
-        this.alertAmount = alertAmount;
-    }
-
-    public int getAlertNum() {
-        return alertNum;
-    }
-
-    public void setAlertNum(int alertNum) {
-        this.alertNum = alertNum;
-    }
-
 }
+
